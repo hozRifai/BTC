@@ -1,0 +1,21 @@
+{
+  "name": "Back To Coding!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Time is over! we should do some coding!",
+  "permissions": ["storage"],
+  "page_action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "css": ["style.css"],
+      "js": ["inject.js"],
+      "matches": [
+        "https://twitter.com/*",
+        "https://*.facebook.com/*",
+        "https://*.instagram.com/"
+      ]
+    }
+  ]
+}
